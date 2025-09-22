@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jersey Shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Jersey Shop</h1>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#index">Accueil</a></li>
+          <li><a href="#product">Maillots</a></li>
+          <li>
+            <a href="#cart">Panier</a><i class="fa-solid fa-cart-shopping"></i
+            >(<span id="cart-count">0</span>)
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" id="index">
+        <h1>Welcome to JERSEY SHOP</h1>
+        <p>
+          Découvrez le style et la passion du basket chez nous!
+        </p>
+      </section>
+      <section class="products" id="product-section">
+        <h2>Nos Maillots</h2>
+        <div class="product-grid" id="product">
+          <!-- Les produits seront insérés ici par JavaScript -->
+          <div class="photo-cards">
+            <img src="images/lakers.avif" alt="Maillot 1" class="product-image"/>
+            <h3>Maillot de Basket 1</h3>
+            <p>Prix : 10 000 CFA</p>
+            <button class="add-to-cart" data-id="1">Ajouter au Panier</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Jersey Shop. Tous droits réservés.</p>
+    </footer>
 
     <script src="product.js"></script>
-</body>
+  </body>
 </html>

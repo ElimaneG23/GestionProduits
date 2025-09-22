@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    min-height: 100vh;
+}
+header {
+  background: #003366;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+nav ul.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav ul.nav-links li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+nav ul.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav ul.nav-links li a:hover {
+  color: #00AEEF;
+}
+.hero {
+  background: linear-gradient(rgba(30,30,47,0.7), rgba(30,30,47,0.7)), url('images/logoshop.jpg') center/cover no-repeat;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* =========================
+   PRODUCTS SECTION
+========================= */
+.products {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color:#003366;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.photo-cards {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.photo-cards:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.product-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.photo-cards h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.photo-cards p {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #00AEEF;
+}
+
+/* =========================
+   BOUTONS
+========================= */
+.add-to-cart {
+  background-color: #003366;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.add-to-cart:hover {
+  background-color: #00AEEF;
+  transform: scale(1.05);
+}
+
+footer {
+  background-color: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem 2rem;
+  margin-top: 2rem;
+}
