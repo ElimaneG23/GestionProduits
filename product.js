@@ -1,4 +1,4 @@
-const products =  [
+const products = [
     {
         id: 1,
         name: "LOS ANGELES LAKERS",
@@ -85,9 +85,9 @@ const products =  [
     },
     {
         id: 13,
-        name: "MIAMI HEAT",
+        name: "MILWAUKEE BUCKS",
         price: 10.000,
-        image: "images/heat.jpg",
+        image: "images/milwaukee-bucks-nike-city-edition-swingman-jersey-2024-custom-unisex_ss5_p-201315937+u-m8jh0negikgtdfezsmjf+v-ykrwrswpg2issyfdf0mt.avif",
         detailsUrl: "produit.html?id=13"
     },
     {
@@ -126,10 +126,10 @@ function afficherListeProduits() {
         const existingProduct = cart.find(item => item.id === produit.id)
         // Création d'un élément HTML pour chaque produit
         const card = document.createElement("div");
-        card.className = "product-card";
+        card.className = "photo-cards";
 
-        
-            card.innerHTML = `
+
+        card.innerHTML = `
              <img src="./${produit.image}" alt="${produit.name}" class="product-image">
             <div class="product-info">
                 <h3>${produit.name}</h3>
