@@ -1,13 +1,12 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #f4f4f4;
-    min-height: 100vh;
-    
+  font-family: "Poppins", sans-serif;
+  background-color: #e4e3e3;
+  min-height: 100vh;
 }
 header {
   background: #003366;
@@ -19,19 +18,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-.hero h1 {
- font-family: 'Algerian', sans-serif;
-}
+
 
 header h1 {
   font-size: 1.9rem;
   letter-spacing: 5px;
-   font-family: 'Algerian', sans-serif;
-  color: #00AEEF;
-
+  font-family: "Algerian", sans-serif;
+  color: #00aeef;
 }
 
 nav ul.nav-links {
@@ -54,10 +50,11 @@ nav ul.nav-links li a {
 }
 
 nav ul.nav-links li a:hover {
-  color: #00AEEF;
+  color: #00aeef;
 }
 .hero {
-  background: linear-gradient(rgba(30,30,47,0.7), rgba(30,30,47,0.7)), url('images/logoshop.jpg') center/cover no-repeat;
+  background: linear-gradient(rgba(30, 30, 47, 0.7), rgba(30, 30, 47, 0.7)),
+    linear-gradient(135deg, #003366, #00aeef);
   color: #fff;
   padding: 6rem 2rem;
   text-align: center;
@@ -124,6 +121,8 @@ nav ul.nav-links li a:hover {
   color: #00AEEF;
 }
 
+
+
 /* =========================
    BOUTONS
 ========================= */
@@ -139,7 +138,7 @@ nav ul.nav-links li a:hover {
 }
 
 .add-to-cart:hover {
-  background-color: #00AEEF;
+  background-color: #00aeef;
   transform: scale(1.05);
 }
 

@@ -27,7 +27,7 @@
       <section class="hero" id="index">
         <h1>🏀Welcome To JERSEY SHOP🏀</h1>
         <p>
-          Découvrez le style et la passion du basket chez nous!
+          Découvrez le style et la passion du basket chez nous!   
         </p>
       </section>
       <section class="products" id="product-section">
@@ -35,14 +35,34 @@
         <div class="product-grid" id="product">
           <!-- Les produits seront insérés ici par JavaScript -->
           <div class="photo-cards">
-            <img src="images/lakers.avif" alt="Maillot 1" class="product-image"/>
-            <h3>Maillot de Basket 1</h3>
+            <img src="images/lakers.avif" alt="${produit.name}" class="product-image"/>
+            <h3>LOS ANGELES LAKERS</h3>
             <p>Prix : 10 000 CFA</p>
-            <button class="add-to-cart" data-id="1">Ajouter au Panier</button>
+            <button class="add-to-cart" class="add-to-cart already-in-cart " id="btn-${produit.id}">Ajouter au Panier</button>    
           </div>
+          <div class="photo-cards">
+            <img src="images/76ers.jpg" alt="${produit.name}" class="product-image"/>
+            <h3>PHILADELPHIA 76ERS</h3>
+            <p>Prix : 10 000 CFA</p>
+            <button class="add-to-cart" class="add-to-cart already-in-cart " id="btn-${produit.id}">Ajouter au Panier</button>    
+          </div>
+          <div class="photo-cards">
+            <img src="images/brooklyn.jpg" alt="${produit.name}" class="product-image"/>
+            <h3>BROOKLYN NETS</h3>
+            <p>Prix : 10 000 CFA</p>
+            <button class="add-to-cart" class="add-to-cart already-in-cart " id="btn-${produit.id}">Ajouter au Panier</button>    
+          </div>
+          <div class="photo-cards">
+            <img src="images/clippers.jpg" alt="${produit.name}" class="product-image"/>
+            <h3>LOS ANGELES CLIPPERS</h3>
+            <p>Prix : 10 000 CFA</p>
+            <button class="add-to-cart" class="add-to-cart already-in-cart " id="btn-${produit.id}">Ajouter au Panier</button>    
+          </div>
+          
         </div>
       </section>
     </main>
+
     <footer>
         <p>&copy; 2025 Jersey Shop. Tous droits réservés.</p>
     </footer>
