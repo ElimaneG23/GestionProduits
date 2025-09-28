@@ -140,5 +140,52 @@ function afficherListeProduits() {
         container.appendChild(card)
     })
 }
-
 afficherListeProduits()
+// ===== Mettre à jour le compteur du panier =====
+function updateCartCount() {
+    document.getElementById("cart-count").textContent = cart.length;
+}
+
+// ===== Ajouter un produit au panier =====
+function addToCart(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+
+    // Vérifie si le produit existe déjà dans le panier
+    const existing = cart.find(item => item.id === product.id);
+    if (existing) {
+        existing.quantity += 1;
+    } else {
+        cart.push({...product, quantity: 1});
+    }
+
+    // Sauvegarde dans localStorage
+    localStorage.setItem("cart", JSON.stringify(cart));
+
+    // Mise à jour du compteur
+    updateCartCount();
+}
+
+// ===== Attacher les événements aux boutons =====
+function setupCartButtons() {
+    const buttons = document.querySelectorAll(".add-to-cart");
+    buttons.forEach((btn, index) => {
+        btn.addEventListener("click", () => {
+            const productId = products[index].id;
+            addToCart(productId);
+        });
+    });
+}
+
+// ===== Ajouter un produit depuis le bouton "+" de la nav =====
+document.getElementById("add-product").addEventListener("click", (e) => {
+    e.preventDefault();
+
+    // Exemple : ajouter automatiquement le 1er produit (Lakers)
+    addToCart(products[0].id);
+    alert(products[0].name + " ajouté au panier !");
+});
+
+// ===== Initialisation =====
+updateCartCount();
+setupCartButtons();
