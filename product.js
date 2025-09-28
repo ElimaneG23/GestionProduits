@@ -2,112 +2,112 @@ const products = [
     {
         id: 1,
         name: "LOS ANGELES LAKERS",
-        price: 29.99,
+        price: 45000,
         image: "images/lbjames.avif",
         detailsUrl: "produit.html?id=1"
     },
     {
         id: 2,
         name: "ORLANDO MAGIC",
-        price: 39.99,
+        price: 16000,
         image: "images/magics.avif",
         detailsUrl: "produit.html?id=2"
     },
     {
         id: 3,
         name: "DALLAS MAVERICKS",
-        price: 49.99,
+        price: 17000,
         image: "images/mavs.avif",
         detailsUrl: "produit.html?id=3"
     },
     {
         id: 4,
         name: "NEW YORK KNICKS",
-        price: 59.99,
+        price: 19500,
         image: "images/newYork.avif",
         detailsUrl: "produit.html?id=4"
     },
     {
         id: 5,
         name: "NEW ORLEANS PELICANS",
-        price: 200.99,
+        price: 22000,
         image: "images/nola.avif",
         detailsUrl: "produit.html?id=5"
     },
     {
         id: 6,
         name: "PORTLAND TRAIL BLAZERS",
-        price: 250.99,
+        price: 25000,
         image: "images/ripcity.jpg",
         detailsUrl: "produit.html?id=6"
     },
     {
         id: 7,
         name: "HOUSTON ROCKETS",
-        price: 175.77,
+        price: 17500,
         image: "images/rockets.png",
         detailsUrl: "produit.html?id=7"
     },
     {
         id: 8,
         name: "SAN ANTONIO SPURS",
-        price: 10.000,
+        price: 11000,
         image: "images/spurs.webp",
         detailsUrl: "produit.html?id=8"
     },
     {
         id: 9,
         name: "PHOENIX SUNS",
-        price: 10.000,
+        price: 40000,
         image: "images/suns.avif",
         detailsUrl: "produit.html?id=9"
     },
     {
         id: 10,
         name: "GOLDEN STATE WARRIORS",
-        price: 10.000,
+        price: 38000,
         image: "images/warriors.avif",
         detailsUrl: "produit.html?id=10"
     },
     {
         id: 11,
         name: "SACRAMENTO KINGS",
-        price: 10.000,
+        price: 17500,
         image: "images/kings.jpg",
         detailsUrl: "produit.html?id=11"
     },
     {
         id: 12,
         name: "UTAH JAZZ",
-        price: 10.000,
+        price: 15000,
         image: "images/jazz.avif",
         detailsUrl: "produit.html?id=12"
     },
     {
         id: 13,
         name: "MILWAUKEE BUCKS",
-        price: 10.000,
+        price: 19000,
         image: "images/milwaukee-bucks-nike-city-edition-swingman-jersey-2024-custom-unisex_ss5_p-201315937+u-m8jh0negikgtdfezsmjf+v-ykrwrswpg2issyfdf0mt.avif",
         detailsUrl: "produit.html?id=13"
     },
     {
         id: 14,
         name: "DENVER NUGGETS",
-        price: 10.000,
+        price: 18000,
         image: "images/denver.avif",
         detailsUrl: "produit.html?id=14"
     },
     {
         id: 15,
         name: "BOSTON CELTICS",
-        price: 10.000,
+        price: 14000,
         image: "images/boston.jpg",
         detailsUrl: "produit.html?id=15"
     },
     {
         id: 16,
         name: "CHICAGO BULLS",
-        price: 10.000,
+        price: 12000,
         image: "images/bulls.jpg",
         detailsUrl: "produit.html?id=16"
     },
