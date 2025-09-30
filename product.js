@@ -158,6 +158,9 @@ function addToCart(productId) {
     } else {
         cart.push({...product, quantity: 1});
     }
+    if (existing) {
+        alert("Le produit est déjà dans le panier.");
+    }
 
     // Sauvegarde dans localStorage
     localStorage.setItem("cart", JSON.stringify(cart));
