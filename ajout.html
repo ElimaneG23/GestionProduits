@@ -10,16 +10,20 @@
   <body>
     <header>
       <h1><strong>Ajouter un Maillot</strong></h1>
-      <nav>
-        
-      </nav>
+      <nav></nav>
     </header>
 
     <main style="padding: 20px">
       <form id="add-product-form">
         <div class="mb-3">
-          <label for="maillot-image">Image (URL ou chemin) :</label>
-          <input type="text" id="maillot-image" class="form-control" required />
+          <label for="maillot-image">Image :</label>
+          <input
+            type="file"
+            id="maillot-image"
+            class="form-control"
+            accept="image/*"
+            required
+          />
         </div>
         <div class="mb-3">
           <label for="maillot-name">Nom du maillot :</label>
