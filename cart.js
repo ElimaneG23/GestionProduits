@@ -1,3 +1,5 @@
+
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 // ===== Mettre à jour le compteur du panier =====

@@ -176,16 +176,7 @@ function setupCartButtons() {
         });
     });
 }
-
-// ===== Ajouter un produit depuis le bouton "+" de la nav =====
-document.getElementById("add-product").addEventListener("click", (e) => {
-    e.preventDefault();
-
-    // Exemple : ajouter automatiquement le 1er produit (Lakers)
-    addToCart(products[0].id);
-    alert(products[0].name + " ajouté au panier !");
-});
-
-// ===== Initialisation =====
 updateCartCount();
 setupCartButtons();
+
+

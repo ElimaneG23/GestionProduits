@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ajouter un Maillot</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="product.css" />
+  </head>
+  <body>
+    <header>
+      <h1><strong>Ajouter un Maillot</strong></h1>
+      <nav>
+        
+      </nav>
+    </header>
+
+    <main style="padding: 20px">
+      <form id="add-product-form">
+        <div class="mb-3">
+          <label for="maillot-image">Image (URL ou chemin) :</label>
+          <input type="text" id="maillot-image" class="form-control" required />
+        </div>
+        <div class="mb-3">
+          <label for="maillot-name">Nom du maillot :</label>
+          <input type="text" id="maillot-name" class="form-control" required />
+        </div>
+
+        <div class="mb-3">
+          <label for="maillot-price">Prix (CFA) :</label>
+          <input
+            type="number"
+            id="maillot-price"
+            class="form-control"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn-primary">Ajouter</button>
+        <a href="product.html" id="back-to-menu">⬅ Retour au Menu</a>
+      </form>
+    </main>
+
+    <script src="product.js"></script>
+  </body>
+</html>
